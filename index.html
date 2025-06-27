@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="header" id="header">
+    <div class="container">
+      <nav>
+        <img src="logo.jpg" class="logo" alt="Logo">
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>Aspiring Frontend Developer</p>
+        <h1>Hi, I'm <br><span style="color: salmon;">Nripendra Singh Rawal</span></h1>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>A passionate and motivated B.Tech Computer Science student with hands-on experience in full-stack web development and problem-solving. Proficient in HTML, CSS, JavaScript, PHP, React.js, and Data Structures.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Languages & Technologies:</span> C, C++, Java, JavaScript, Python, HTML, CSS, TypeScript</li>
+              <li><span>Libraries & Frameworks:</span> React.js, Tkinter, Tailwind CSS, OpenCV</li>
+              <li><span>Tools & Platforms:</span> Git, Github, VS Code, IntelliJ IDEA, MongoDB, SQL</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>B.Tech Computer Science Engineering:</span> Graphic Era Hill University, CGPA: 8.0</li>
+              <li><span>Class 12th:</span> Mallikarjun Sr. Sec School, CBSE Board, 95%</li>
+              <li><span>Class 10th:</span> Mallikarjun Sr. Sec School, CBSE Board, 97.8%</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="services-list">
+        <div class="service">
+          <i class="fa-solid fa-diagram-project"></i>
+          <h2>3</h2>
+          <p>Major Projects</p>
+        </div>
+        <div class="service">
+          <i class="fa-solid fa-code"></i>
+          <h2>300+</h2>
+          <p>DSA Problem Solved</p>
+        </div>
+        <div class="service">
+          <i class="fa-solid fa-envelope"></i>
+          <h2>98%</h2>
+          <p>Model Accuracy</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+
+      <div class="work-item">
+        <h3>Handwritten Digit Recognizer</h3>
+        <p>
+          <strong>Description:</strong> A machine learning project to recognize digits from handwritten images using deep learning.<br>
+          <strong>Tech Stack:</strong> Python, Keras, TensorFlow, CNN, OpenCV<br>
+          <strong>Highlights:</strong>
+          <ul>
+            <li>Trained on the MNIST dataset (~98% accuracy)</li>
+            <li>Uses a Convolutional Neural Network (CNN) model</li>
+            <li>Integrated OpenCV for real-time greyscale digit input</li>
+            <li>Custom preprocessing pipeline for image normalization</li>
+          </ul>
+        </p>
+        <a href="https://github.com/NripendraRawal/Handwritten-Digit-Recognizer" target="_blank">View Project</a>
+      </div>
+
+      <div class="work-item">
+        <h3>Cafe Management System</h3>
+        <p>
+          <strong>Description:</strong> A full-stack web application to manage orders, billing, and daily reports in a café.<br>
+          <strong>Tech Stack:</strong> React.js, Node.js, Express.js, MongoDB, CSS<br>
+          <strong>Highlights:</strong>
+          <ul>
+            <li>User-friendly interface with menu, order form, and summary view</li>
+            <li>Secure backend REST API for CRUD operations</li>
+            <li>Real-time cart updates and auto-calculated total bill</li>
+            <li>Admin dashboard to track orders and earnings</li>
+          </ul>
+        </p>
+        <a href="https://github.com/NripendraRawal/Cafe-Management-System" target="_blank">View Project</a>
+      </div>
+
+      <div class="work-item">
+        <h3>Virtual Memory Simulator</h3>
+        <p>
+          <strong>Description:</strong> A visual simulation tool to understand virtual memory concepts and page replacement algorithms.<br>
+          <strong>Tech Stack:</strong> Next.js, TypeScript, Tailwind CSS<br>
+          <strong>Highlights:</strong>
+          <ul>
+            <li>Interactive simulation for FIFO and LRU algorithms</li>
+            <li>Highlights page faults and memory frame transitions</li>
+            <li>Step-by-step navigation with animation</li>
+            <li>Ideal for educational demos in Operating Systems</li>
+          </ul>
+        </p>
+        <a href="https://github.com/NripendraRawal/Virtual-Memory-Simulator" target="_blank">View Project</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h1 class="sub-title">Contact Me</h1>
+
+      <div class="row">
+        <div class="contact-left">
+          <div class="contact-grid">
+            <div class="contact-card">
+              <i class="fas fa-envelope"></i>
+              <h4>Email</h4>
+              <a href="mailto:nripendrasingh.rawal@gmail.com">nripendrasingh.rawal@gmail.com</a>
+            </div>
+            <div class="contact-card">
+              <i class="fab fa-github"></i>
+              <h4>GitHub</h4>
+              <a href="https://github.com/NripendraRawal" target="_blank">github.com/NripendraRawal</a>
+            </div>
+            <div class="contact-card">
+              <i class="fab fa-linkedin"></i>
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/nripendra-rawal-653125229" target="_blank">linkedin.com/in/nripendra-rawal</a>
+            </div>
+            <div class="contact-card">
+              <i class="fas fa-phone"></i>
+              <h4>Phone</h4>
+              <p>+91-7351778816</p>
+            </div>
+          </div>
+          <a href="Nripendra_Singh_Rawal.pdf" download class="btn">Download Resume</a>
+        </div>
+
+       <div class="contact-form-container">
+  <form name ="submit-to-google-sheet">
+    <input type="text" name="name" placeholder="Enter Your Name" required>
+    <input type="email" name="email" placeholder="Enter Your Email" required>
+    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn2" title="Send">
+      <i class="fas fa-paper-plane"></i>
+    </button>
+  </form>
+  <span id="msg"></span>
+</div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwt2ZNRHgCc7splEGGHePpXYQkC5btJBubvUVAoiJlZMGtuj6p1vrwBl5CnRzbRax-6yA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{msg.innerHTML="message sent successfully!"
+      setTimeout(function(){
+        msg.innerHTML=""
+      },5000)
+      form.reset()})
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
